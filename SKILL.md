@@ -30,7 +30,7 @@ npm update -g @jackwener/opencli
 Browser commands require:
 1. Chrome browser running (logged into target sites)
 2. [Playwright MCP Bridge](https://chromewebstore.google.com/detail/playwright-mcp-bridge/mmlmfjhmonkocbjadbfplnigmagldckm) extension
-3. Click extension icon to approve connection (or set `PLAYWRIGHT_MCP_EXTENSION_TOKEN`)
+3. Configure `PLAYWRIGHT_MCP_EXTENSION_TOKEN` env var (from extension settings) or in MCP config
 
 Public API commands (`hackernews`, `github search`, `v2ex`) need no browser.
 

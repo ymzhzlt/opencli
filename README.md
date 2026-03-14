@@ -57,7 +57,21 @@ npm install -g @jackwener/opencli@latest
 Browser commands need:
 1. **Chrome** running with the target site logged in
 2. **[Playwright MCP Bridge](https://chromewebstore.google.com/detail/playwright-mcp-bridge/mmlmfjhmonkocbjadbfplnigmagldckm)** extension installed
-3. Click the extension icon to approve connection (or set `PLAYWRIGHT_MCP_EXTENSION_TOKEN` to auto-approve)
+3. Configure `PLAYWRIGHT_MCP_EXTENSION_TOKEN` (from the extension settings page) as an environment variable, or in your MCP config:
+
+```json
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest", "--extension"],
+      "env": {
+        "PLAYWRIGHT_MCP_EXTENSION_TOKEN": "<your-token>"
+      }
+    }
+  }
+}
+```
 
 Public API commands (`hackernews`, `github search`, `v2ex`) need no browser at all.
 
