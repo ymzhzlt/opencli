@@ -48,7 +48,7 @@ OpenCLI 通过 Chrome 浏览器 + [Playwright MCP Bridge](https://github.com/nic
 1. 安装 **[Playwright MCP Bridge](https://chromewebstore.google.com/detail/playwright-mcp-bridge/mmlmfjhmonkocbjadbfplnigmagldckm)** 扩展
 2. 在浏览器插件栏点击该插件，或者在插件设置页获取你的 Extension Token。
 
-**你必须将这个 Token 同时配置到你的 MCP 配置文件以及环境变量中。**
+**你必须将这个 Token 同时配置到你的 MCP 配置文件以及环境变量中（两者缺一不可）。**
 
 首先，配置你的 MCP 客户端（如 Claude/Cursor 等）：
 

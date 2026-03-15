@@ -48,7 +48,7 @@ OpenCLI needs a way to communicate with your browser. We highly recommend config
 1. Install **[Playwright MCP Bridge](https://chromewebstore.google.com/detail/playwright-mcp-bridge/mmlmfjhmonkocbjadbfplnigmagldckm)** extension in Chrome.
 2. Obtain your token by clicking the extension icon in the browser toolbar or from the extension settings page.
 
-**You must configure this token in BOTH your MCP configuration and system environment variables.**
+**You must configure this token in BOTH your MCP configuration AND system environment variables.**
 
 First, add it to your MCP client config (e.g. Claude/Cursor):
 
